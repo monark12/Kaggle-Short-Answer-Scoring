@@ -1,31 +1,31 @@
 # The Hewlett Foundation: Short Answer Scoring
 The notebook contains my solution to the given problem.<br>
-https://www.kaggle.com/c/asap-sas
-The problem is to Score Student-Answers in a Scale of 0-3.
-The dataset contains Answers from 10 Different Categories/Topics.
-For full description visit the link.
+https://www.kaggle.com/c/asap-sas<br>
+The problem is to Score Student-Answers in a Scale of 0-3.<br>
+The dataset contains Answers from 10 Different Categories/Topics.<br>
+For full description visit the link.<br>
 
 # Instruction
-You can find the data from the link above.
-The Dataset is provided in a TSV File. It contains the following Columns------>
+You can find the data from the link above.<br>
+The Dataset is provided in a TSV File. It contains the following Columns.<br>
 
-id----->       Essay id or answer id
-EssaySet-----> 1-10, an id for each set of essays.
-Score 1------> The human rater's score for the answer. This is the final score for the answer and the score that you are                    trying to predict.
-Score2-------> A second human rater's score for the answer. This is provided as a measure of reliability, but had no bearing                on the score the essay received.
-EssayText----> The ascii text of a student's response.
+id----->       Essay id or answer id<br>
+EssaySet-----> 1-10, an id for each set of essays.<br>
+Score 1------> The human rater's score for the answer. This is the final score for the answer and the score that you are                    trying to predict.<br>
+Score2-------> A second human rater's score for the answer. This is provided as a measure of reliability, but had no bearing                on the score the essay received.<br>
+EssayText----> The ascii text of a student's response.<br>
 
 
 # Dependencies
-ipython
-Keras
-Theano
-Cuda(For GPU processing)
-Numpy
-Pandas
+ipython<br>
+Keras<br>
+Theano<br>
+Cuda(For GPU processing)<br>
+Numpy<br>
+Pandas<br>
 
 # Preprocessing
-We cannot directly pass raw-text to our network for training. So we have to convert the input data into a format suitable for our network.
+We cannot directly pass raw-text to our network for training. So we have to convert the input data into a format suitable for our network.<br>
 
 1. Raw Data Encoding
    Format the text samples and labels into tensors that can be fed into a neural network
@@ -77,6 +77,5 @@ This is a simple flowchart diagram of my model.
 11. Loss function: Categorical cross entropy
 
 # Results:
+Validation accuracy: 86.47%<br>
 Test accuracy: 86.61%
-Validation accuracy: 86.47%
-
