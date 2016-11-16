@@ -73,8 +73,8 @@ This is a simple flowchart diagram of my model.
 8. I have used advanced activation function called ELU provided by Keras which gave a better performance over conventional 
    relu and sigmoid activations.
 9. The next layer is the output layer of dim=4 where each element in 4 dimensional vector corresponds to a score.
-10. Optimizer: Adam with learning rate 0.001 and batch size = 128
-11. Loss function: Categorical cross entropy
+10. **Optimizer**: Adam with learning rate 0.001 and batch size = 128
+11. **Loss function**: Categorical cross entropy
 
 # Results:
 Validation accuracy: 86.47%<br>
